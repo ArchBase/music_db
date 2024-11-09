@@ -269,7 +269,7 @@ if (mysqli_num_rows($result) > 0) {
     echo "<ul style='list-style-type: none; padding: 0;'>";
     while ($row = mysqli_fetch_assoc($result)) {
         echo "<li style='margin: 10px 0; padding: 10px; color: #3b533; border-radius: 5px;'>";
-        echo "<a href='../view_playlist/view_songs_in_playlist.php?playlist_id={$row['id']}' style='margin-left: 15px; color: #fc03cf; text-decoration: none;'><span style='font-size: 1.2em; font-weight: bold;'>{$row['name']}</span></a>"; // Display playlist name
+        echo "<a href='../view_playlist/view_songs_in_playlist.php?playlist_id={$row['id']}&track=0' style='margin-left: 15px; color: #fc03cf; text-decoration: none;'><span style='font-size: 1.2em; font-weight: bold;'>{$row['name']}</span></a>"; // Display playlist name
         //echo "<a href='../view_playlist/view_songs_in_playlist.php?playlist_id={$row['id']}' style='margin-left: 15px; color: #fc03cf; text-decoration: none;'>View playlist</a>"; // Display playlist ID (optional)
         echo "</li>";
     }
@@ -307,10 +307,10 @@ if (mysqli_num_rows($result) > 0) {
         <div class="track"> 
             <h2 class="t">Tracks</h2>
             <div class="but">
-            <div class="bu1"><a href='../view_playlist/view_songs_in_playlist.php?playlist_id=27'><div class="mel">Melody</div></a></div>
-            <div class="bu2"><a href='../view_playlist/view_songs_in_playlist.php?playlist_id=1'><div class="rap">Rap</div></a></div>
-            <div class="bu3"><a href='../view_playlist/view_songs_in_playlist.php?playlist_id=33'><div class="hh">H-H</div></a></div>
-            <div class="bu4"><a href='../view_playlist/view_songs_in_playlist.php?playlist_id=2'><div class="cl">Classic</div></div>
+            <div class="bu1"><a href='../view_track/view_songs_in_track.php?playlist_id=27&track=1'><div class="mel">Melody</div></a></div>
+            <div class="bu2"><a href='../view_track/view_songs_in_track.php?playlist_id=1&track=1'><div class="rap">Rap</div></a></div>
+            <div class="bu3"><a href='../view_track/view_songs_in_track.php?playlist_id=33&track=1'><div class="hh">H-H</div></a></div>
+            <div class="bu4"><a href='../view_track/view_songs_in_track.php?playlist_id=2&track=1'><div class="cl">Classic</div></div>
             </div>
         </div>   
     </div>
