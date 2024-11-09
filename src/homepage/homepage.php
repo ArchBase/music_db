@@ -14,7 +14,7 @@ $username = $_COOKIE['user_name'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sangita Music App</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -57,67 +57,6 @@ $username = $_COOKIE['user_name'];
                         </form>
                     </div>
                 </div>
-
-                <style>
-                    /* Full-screen overlay */
-                    #search-form, #playlist-form {
-                        position: fixed;
-                        top: 0;
-                        left: 0;
-                        width: 100vw;
-                        height: 100vh;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: rgba(0, 0, 0, 0.8);
-                        z-index: 1000;
-                    }
-                    /* Centered modal */
-                    #search-song-form, #new-playlist-form {
-                        background-color: #222;
-                        padding: 40px;
-                        border-radius: 10px;
-                        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-                        width: 90%;
-                        max-width: 500px;
-                        text-align: center;
-                        color: #ffffff;
-                    }
-                    #search-song-form h2, #new-playlist-form h2 {
-                        color: #d1b3ff;
-                        margin-bottom: 20px;
-                    }
-                    #search-song-form label, #new-playlist-form label {
-                        font-size: 1.2em;
-                        color: #d1b3ff;
-                    }
-                    #search-song-form input[type="text"], #new-playlist-form input[type="text"] {
-                        width: 100%;
-                        padding: 15px;
-                        font-size: 1.1em;
-                        margin: 10px 0 20px;
-                        border: none;
-                        border-radius: 5px;
-                        background-color: #333;
-                        color: #d1b3ff;
-                    }
-                    #search-song-form button, #new-playlist-form button {
-                        width: 100%;
-                        padding: 15px;
-                        font-size: 1.2em;
-                        font-weight: bold;
-                        color: #ffffff;
-                        background-color: #4a4a7d;
-                        border: none;
-                        border-radius: 5px;
-                        cursor: pointer;
-                        transition: background-color 0.3s;
-                    }
-                    #search-song-form button:hover, #new-playlist-form button:hover {
-                        background-color: #373764;
-                    }
-                </style>
-
 
             </div>
         </div>
@@ -180,18 +119,7 @@ $username = $_COOKIE['user_name'];
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
+    
 </body>
-<script>
-    // Toggle form visibility
-    document.getElementById('show-search-link').addEventListener('click', function(event) {
-        event.preventDefault();
-        const form = document.getElementById('search-form');
-        form.style.display = form.style.display === 'none' ? 'flex' : 'none';
-    });
-    document.getElementById('show-form-link').addEventListener('click', function(event) {
-        event.preventDefault();
-        const form = document.getElementById('playlist-form');
-        form.style.display = form.style.display === 'none' ? 'flex' : 'none';
-    });
-</script>
 </html>
