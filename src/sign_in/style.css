@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+    background-color: #181818; /* Match your dark theme */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Form Container */
+form {
+    background-color: #1e1e2f;
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    width: 320px; /* Adjust form width */
+}
+
+/* Form Title */
+form h1 {
+    color: #ff8cb8;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input Fields */
+form input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ff8cb8;
+    border-radius: 5px;
+    background-color: #fef7c8;
+    color: #000;
+    font-size: 16px;
+}
+
+/* Input Icons */
+form input::placeholder {
+    color: #7c7c7c;
+}
+
+/* Button */
+form button {
+    background-color: #ff8cb8;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Button matches input width */
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #ff69a0;
+}
+
+/* Divider */
+form .divider {
+    text-align: center;
+    margin: 20px 0;
+    color: #aaa;
+}
+
+form .divider:before,
+form .divider:after {
+    content: "";
+    display: inline-block;
+    width: 40%;
+    height: 1px;
+    background: #555;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+/* Social Buttons */
+form .social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+form .social-buttons a {
+    font-size: 20px;
+    color: #aaa;
+    text-decoration: none;
+}
+
+form .social-buttons a:hover {
+    color: white;
+}
+
+/* Sign-Up Section */
+form .signup {
+    text-align: center;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+form .signup a {
+    color: #ff8cb8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form .signup a:hover {
+    text-decoration: underline;
+}
